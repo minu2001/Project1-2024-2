@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>My Weather App</title>
+</head>
+
+<body>
+  <div class="container w-75 mt-5 p-5 shadow text-center bg-warning text-dark">
+    <H2>Current Weather in Seoul, Korea</H2>
+    <hr>
+    <div class="row bg-success p-5 rounded-circle">
+      <div class="col-5">
+        <img id="icon">
+      </div>
+      <div class="col-7 m-auto">
+        <h1 class="display-3" id="temp"></h1>
+        <strong id="weather"></strong><br>
+        Min: <span id="min"></span>°C, Max: <span id="max"></span>°C<br>
+        Wind: <span id="wind"></span>m/s
+      </div>
+    </div>
+  </div>
+  도시입력
+  <input id="city" , type="text" class="form-control" placeholder="도시 이름을 입력하세요.">
+  <h2></h2>
+  <td style="height:30px;">온도표시 형식</td>
+  <td>
+    <select id="tformat">
+      <option value="metric">Metric(섭씨온도)</option>
+      <option value="standard">Standard(절대온도)</option>
+      <option value="imperial", selected>Imperial(화씨온도)</option>
+    </select>
+  </td>
+  <hr>
+  <button onclick="get_weather() " class="btn btn-info">날씨 정보 조회</button>
+
+
+  <script src="weather.js"></script>
+</body>
+
+</html>
