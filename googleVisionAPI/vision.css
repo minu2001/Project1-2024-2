@@ -88,7 +88,8 @@ h1 {
 }
 
 .image-preview:hover img {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05);
+    /* Slight zoom effect */
 }
 
 .image-border {
@@ -114,7 +115,7 @@ textarea {
     font-size: 15px;
     text-align: center;
     margin: 0 auto;
-    
+
 }
 
 textarea:focus {
@@ -122,6 +123,3 @@ textarea:focus {
     outline: none;
     font-family: 'Raleway', sans-serif;
 }
-
-
-

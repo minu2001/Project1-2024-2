@@ -15,18 +15,15 @@
 
     <div class="container">
         <h1>이민우의 인공지능 놀이터<br>Google Vision API</h1>
-
         <div class="file-upload">
             <label for="PickFile" class="custom-file-upload">이미지 선택</label>
             <input type="file" onchange="uploadFiles(this.files)" id="PickFile" style="display:none;">
             <input type="button" onclick="analyze()" value="이미지 분석" id="analysis" class="custom-button">
         </div>
-
         <div class="image-preview">
-            <img id="gimage" src ="" rows="10" cols="50" alt="Selected Image" class="image-border">
+            <img id="gimage" src="" rows="10" cols="50" alt="이미지를 업로드 해주세요." class="image-border">
         </div>
-
-        <textarea id="resultArea" rows="10" cols="50" placeholder="Face detection result will appear here" ></textarea>
+        <textarea id="resultArea" rows="10" cols="50" placeholder="Face detection result will appear here"></textarea>
 
     </div>
 
