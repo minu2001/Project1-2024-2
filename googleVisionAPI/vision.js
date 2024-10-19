@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = "----";
+const GOOGLE_API_KEY = "---";
 const CV_URL = 'https://vision.googleapis.com/v1/images:annotate?key=' + GOOGLE_API_KEY;
 
 let imagestring = ''; 
@@ -14,7 +14,7 @@ function processFile(event) {
 function uploadFiles(files) {
     const file = files[0];
     const reader = new FileReader();
-    reader.onloadend = processFile;
+reader.onloadend = processFile;
     reader.readAsDataURL(file); 
 }
 
