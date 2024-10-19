@@ -1,4 +1,4 @@
-OPENAPI_KEY = "---------"
+OPENAPI_KEY = "----"
 
 smodel = "gpt-3.5-turbo"
 smodelmini = "gpt-4o-mini"

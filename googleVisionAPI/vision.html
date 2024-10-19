@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Vision API</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="vision.js"></script>
+    <link href="vision.css" rel="stylesheet">
+
 </head>
+
 <body>
-    
-    <h1> 이민우의 인공지능 놀이터 구글 비젼 API </h1>
 
-   <input type="file" onchange="uploadFiles(this.files)">
-   <input type="button" onclick="analyze()" value="이미지분석">
-    
+    <div class="container">
+        <h1>이민우의 인공지능 놀이터<br>Google Vision API</h1>
 
-    <img id="gimage" style="border:5px solid #555">
+        <div class="file-upload">
+            <label for="PickFile" class="custom-file-upload">이미지 선택</label>
+            <input type="file" onchange="uploadFiles(this.files)" id="PickFile" style="display:none;">
+            <input type="button" onclick="analyze()" value="이미지 분석" id="analysis" class="custom-button">
+        </div>
 
-    <textarea  id="result" cols="30" rows="10"></textarea>
+        <div class="image-preview">
+            <img id="gimage" src ="" rows="10" cols="50" alt="Selected Image" class="image-border">
+        </div>
+
+        <textarea id="resultArea" rows="10" cols="50" placeholder="Face detection result will appear here" ></textarea>
+
+    </div>
 
 </body>
+
 </html>
